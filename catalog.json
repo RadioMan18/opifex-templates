@@ -1,0 +1,102 @@
+{
+  "$schema": "https://opifex-templates.dev/schemas/catalog-v1.json",
+  "name": "Opifex Agent Templates",
+  "description": "Community agent templates for Opifex v1.1.0+",
+  "version": "1.0.0",
+  "templates": [
+    {
+      "id": "research-summarizer",
+      "name": "Research Summarizer",
+      "description": "Summarizes web research into a briefing doc with citations.",
+      "version": "1.0.0",
+      "author": "community",
+      "downloadUrl": "https://github.com/RadioMan18/opifex-templates/releases/download/research-summarizer-1.0.0/research-summarizer-1.0.0.zip",
+      "checksum": "sha256:REPLACE_WITH_ACTUAL_CHECKSUM",
+      "specJson": {
+        "goal": "Research a topic and produce a concise briefing document with citations",
+        "steps": [
+          {
+            "action": "Clarify research scope and key questions",
+            "inputs": [],
+            "requiresApproval": false,
+            "approvalContext": null
+          },
+          {
+            "action": "Perform web searches across multiple sources",
+            "inputs": [],
+            "requiresApproval": false,
+            "approvalContext": null
+          },
+          {
+            "action": "Extract and verify key facts",
+            "inputs": [],
+            "requiresApproval": false,
+            "approvalContext": null
+          },
+          {
+            "action": "Synthesize findings into a structured report",
+            "inputs": [],
+            "requiresApproval": false,
+            "approvalContext": null
+          },
+          {
+            "action": "Add citations and source links",
+            "inputs": [],
+            "requiresApproval": false,
+            "approvalContext": null
+          }
+        ],
+        "tools": ["web_search", "document_summarizer", "citation_formatter"],
+        "knowledgeSources": [],
+        "triggers": [],
+        "outputs": ["research_report", "source_citations", "key_findings_summary"]
+      },
+      "model": "ollama",
+      "isStarter": false
+    },
+    {
+      "id": "customer-support-triage",
+      "name": "Customer Support Triage",
+      "description": "Routes incoming customer messages to the right team and drafts initial responses.",
+      "version": "1.0.0",
+      "author": "community",
+      "downloadUrl": "https://github.com/RadioMan18/opifex-templates/releases/download/customer-support-triage-1.0.0/customer-support-triage-1.0.0.zip",
+      "checksum": "sha256:REPLACE_WITH_ACTUAL_CHECKSUM",
+      "specJson": {
+        "goal": "Classify incoming customer support messages and route to the appropriate team",
+        "steps": [
+          {
+            "action": "Analyze customer message for intent and urgency",
+            "inputs": [],
+            "requiresApproval": false,
+            "approvalContext": null
+          },
+          {
+            "action": "Look up customer account and history",
+            "inputs": [],
+            "requiresApproval": true,
+            "approvalContext": "Accessing customer PII requires approval"
+          },
+          {
+            "action": "Route to appropriate support team",
+            "inputs": [],
+            "requiresApproval": false,
+            "approvalContext": null
+          },
+          {
+            "action": "Draft initial response for agent review",
+            "inputs": [],
+            "requiresApproval": true,
+            "approvalContext": "Drafting customer-facing message requires approval before sending"
+          }
+        ],
+        "tools": ["crm_lookup", "ticket_system", "knowledge_base"],
+        "knowledgeSources": ["faq.md", "escalation_policy.pdf"],
+        "triggers": ["customer_message", "new_ticket"],
+        "outputs": ["ticket_id", "assigned_team", "draft_response"]
+      },
+      "model": "ollama",
+      "isStarter": false
+    }
+  ]
+}
