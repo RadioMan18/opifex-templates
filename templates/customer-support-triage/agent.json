@@ -1,0 +1,33 @@
+{
+  "goal": "Classify incoming customer support messages and route to the appropriate team",
+  "steps": [
+    {
+      "action": "Analyze customer message for intent and urgency",
+      "inputs": [],
+      "requiresApproval": false,
+      "approvalContext": null
+    },
+    {
+      "action": "Look up customer account and history",
+      "inputs": [],
+      "requiresApproval": true,
+      "approvalContext": "Accessing customer PII requires approval"
+    },
+    {
+      "action": "Route to appropriate support team",
+      "inputs": [],
+      "requiresApproval": false,
+      "approvalContext": null
+    },
+    {
+      "action": "Draft initial response for agent review",
+      "inputs": [],
+      "requiresApproval": true,
+      "approvalContext": "Drafting customer-facing message requires approval before sending"
+    }
+  ],
+  "tools": ["crm_lookup", "ticket_system", "knowledge_base"],
+  "knowledgeSources": ["faq.md", "escalation_policy.pdf"],
+  "triggers": ["customer_message", "new_ticket"],
+  "outputs": ["ticket_id", "assigned_team", "draft_response"]
+}

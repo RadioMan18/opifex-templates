@@ -1,0 +1,39 @@
+{
+  "goal": "Research a topic and produce a concise briefing document with citations",
+  "steps": [
+    {
+      "action": "Clarify research scope and key questions",
+      "inputs": [],
+      "requiresApproval": false,
+      "approvalContext": null
+    },
+    {
+      "action": "Perform web searches across multiple sources",
+      "inputs": [],
+      "requiresApproval": false,
+      "approvalContext": null
+    },
+    {
+      "action": "Extract and verify key facts",
+      "inputs": [],
+      "requiresApproval": false,
+      "approvalContext": null
+    },
+    {
+      "action": "Synthesize findings into a structured report",
+      "inputs": [],
+      "requiresApproval": false,
+      "approvalContext": null
+    },
+    {
+      "action": "Add citations and source links",
+      "inputs": [],
+      "requiresApproval": false,
+      "approvalContext": null
+    }
+  ],
+  "tools": ["web_search", "document_summarizer", "citation_formatter"],
+  "knowledgeSources": [],
+  "triggers": [],
+  "outputs": ["research_report", "source_citations", "key_findings_summary"]
+}

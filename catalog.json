@@ -11,7 +11,7 @@
       "version": "1.0.0",
       "author": "community",
       "downloadUrl": "https://github.com/RadioMan18/opifex-templates/releases/download/research-summarizer-1.0.0/research-summarizer-1.0.0.zip",
-      "checksum": "sha256:REPLACE_WITH_ACTUAL_CHECKSUM",
+      "checksum": "sha256:E353946A90BF038B8F5B710FE657EDA5A8793A86D042702FA656B9D1F98EB983",
       "specJson": {
         "goal": "Research a topic and produce a concise briefing document with citations",
         "steps": [
@@ -61,7 +61,7 @@
       "version": "1.0.0",
       "author": "community",
       "downloadUrl": "https://github.com/RadioMan18/opifex-templates/releases/download/customer-support-triage-1.0.0/customer-support-triage-1.0.0.zip",
-      "checksum": "sha256:REPLACE_WITH_ACTUAL_CHECKSUM",
+      "checksum": "sha256:42BDAEE64F5E5D55BDF2A66025C8ADA8A2F4D976AA390303CBE921A5583C8E56",
       "specJson": {
         "goal": "Classify incoming customer support messages and route to the appropriate team",
         "steps": [
